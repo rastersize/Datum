@@ -19,6 +19,12 @@
 		9CE3AFAF17D659050022C415 /* Datum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE3AF9517D659040022C415 /* Datum.framework */; };
 		9CE3AFB517D659050022C415 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3AFB317D659050022C415 /* InfoPlist.strings */; };
 		9CE3AFB717D659050022C415 /* DatumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3AFB617D659050022C415 /* DatumTests.m */; };
+		9CE3AFDD17D662970022C415 /* DATObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CE3AFDB17D662970022C415 /* DATObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CE3AFDE17D662970022C415 /* DATObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3AFDC17D662970022C415 /* DATObject.m */; };
+		9CE3AFDF17D662970022C415 /* DATObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3AFDC17D662970022C415 /* DATObject.m */; };
+		9CE3AFE017D662A60022C415 /* Datum.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CE3AFA317D659050022C415 /* Datum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CE3AFE217D662D30022C415 /* Datum.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CE3AFA317D659050022C415 /* Datum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CE3AFE317D662D60022C415 /* DATObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CE3AFDB17D662970022C415 /* DATObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +91,8 @@
 		9CE3AFD117D65C660022C415 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
 		9CE3AFD217D65C660022C415 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		9CE3AFD317D65C660022C415 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9CE3AFDB17D662970022C415 /* DATObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DATObject.h; sourceTree = "<group>"; };
+		9CE3AFDC17D662970022C415 /* DATObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DATObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				9CE3AFA317D659050022C415 /* Datum.h */,
+				9CE3AFDB17D662970022C415 /* DATObject.h */,
+				9CE3AFDC17D662970022C415 /* DATObject.m */,
 				9CE3AF9D17D659050022C415 /* Supporting Files */,
 			);
 			path = Datum;
@@ -279,6 +289,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE3AFE017D662A60022C415 /* Datum.h in Headers */,
+				9CE3AFDD17D662970022C415 /* DATObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE3AFE117D662C60022C415 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE3AFE217D662D30022C415 /* Datum.h in Headers */,
+				9CE3AFE317D662D60022C415 /* DATObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +313,7 @@
 				9CE3AF6317D658B10022C415 /* Sources */,
 				9CE3AF6417D658B10022C415 /* Frameworks */,
 				9CE3AF6517D658B10022C415 /* CopyFiles */,
+				9CE3AFE117D662C60022C415 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -425,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE3AFDE17D662970022C415 /* DATObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE3AFDF17D662970022C415 /* DATObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
