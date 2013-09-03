@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+xctool -project Datum.xcodeproj -scheme "Datum iOS" -configuration Release build test -sdk iphonesimulator -arch i386
+xctool -project Datum.xcodeproj -scheme "Datum OS X" -configuration Release build test -sdk macosx -arch x86_64
